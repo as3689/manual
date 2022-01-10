@@ -566,6 +566,14 @@ nav.sub-menu-open .nav-links .hover-el {
   /* position: absolute; */
   margin-left: 3rem;
 }
+
+.imgcontainer > .album > .imagesmain > video{
+  width: 73rem;
+  height: 42rem;
+  /* position: absolute; */
+  margin-left: 3rem;
+}
+
 .imgcontainer > button, .imgcontainer >button:active, .imgcontainer > button:focus{
   width: 105px;
   height: 40px;

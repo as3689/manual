@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
+  <title>생산실행관리 시스템[MES]메뉴얼</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./ico/logo.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- side navbar -->
+<nav class=side>
+	<div class="menu-btn">
+		<div class="line line__1"></div>
+		<div class="line line__2"></div>
+		<div class="line line__3"></div>
+	</div>
+
+	<div class="sub-menu-btn">
+		<div class="line line__1"></div>
+		<div class="line line__2"></div>
+	</div>
+
+	<ul class="nav-links">
+		<li class="link">
+			<a href="#">Home</a>
+		</li>
+		<li class="link">
+			<a href="../page/Setting.html">설치 및 로그인</a>
+			<ol>
+				<li><a href="#">설치방법</a></li>
+				<li><a href="#">로그인방법</a></li>
+			</ol>
+		</li>
+		<li class="link">
+			<a href="#">시스템</a>
+			<ol>
+				<li><a href="#">시스템 공통</a></li>
+				<li><a href="#">사업장 관리</a></li>
+				<li><a href="#">사용자 권한 </a></li>
+				<li><a href="#">사용자 정보 </a></li>
+			</ol>
+		</li>
+		<li class="link">
+			<a href="#">기준정보</a>
+			<ol>
+				<li><a href="#">공통코드</a></li>
+				<li><a href="#">거래처</a></li>
+				<li><a href="#">표준공정</a></li>
+				<li><a href="#">작업방법</a></li>
+				<li><a href="#">표준작물</a></li>
+				<li><a href="#">작물공정</a></li>
+				<li><a href="#">표준작물BOM</a></li>
+				<li><a href="#">Rack관리</a></li>
+				<li><a href="#">자재코드</a></li>
+				<li><a href="#">Rack관리(매트릭스)</a></li>
+			</ol>
+		</li>
+		<li class="link">
+			<a href="#">생산관리</a>
+			<ol>
+				<li><a href="#">Email</a></li>
+				<li><a href="#">Social</a></li>
+			</ol>
+		</li>
+		<li class="link">
+			<a href="#">구매관리</a>
+			<ol>
+				<li><a href="#">Email</a></li>
+				<li><a href="#">Social</a></li>
+			</ol>
+		</li>
+		<li class="link">
+			<a href="#">자재관리</a>
+			<ol>
+				<li><a href="#">Email</a></li>
+				<li><a href="#">Social</a></li>
+			</ol>
+		</li>
+		<li class="link">
+			<a href="#">태블릿버전</a>
+			<ol>
+				<li><a href="#">Email</a></li>
+				<li><a href="#">Social</a></li>
+			</ol>
+		</li>
+	</ul>
+</nav>
+<!-- side navbar end -->
+
+<section id="wrapper">
+    <div class="content">
+       <!-- Tab links -->
+       <div class="tabs">
+          <button class="tablinks active" data-country="Install"><p data-title="설치방법">설치방법</p></button>
+          <button class="tablinks" data-country="Login"><p data-title="로그인"></p>로그인</button>
+          <!-- <button class="tablinks" data-country="SystemCommon"><p data-title="시스템공통">시스템공통</p></button> -->
+       </div>
+ 
+       <!-- Tab content -->
+       <div class="wrapper_tabcontent">
+          <div id="Install" class="tabcontent active">
+             <h3>설치방법</h3>
+			 <!-- 이미지 캐러셀 -->
+			 <div class="imgcontainer">
+				<div class="album">
+				  <div class="imagesmain">
+					<img src="../img/설치방법1.png">
+					<img src="../img/설치방법2.png">
+					<video controls autoplay>
+						<source src = "../video/setting.mp4" type = "video/mp4">
+					</video>
+					<!-- <video controls src="../video/setting.mp4"> -->
+				  </div>
+				</div>
+				<button class="prev">이 전</button>
+				<button class="next">다 음</button>  
+			  </div>
+			  <!-- 이미지캐러셀 끝 -->
+			</div>
+
+			<div id="Login" class="tabcontent">
+			   <h3>로그인</h3>
+			 <!-- 이미지 캐러셀 -->
+			 <div class="imgcontainer">
+				<div class="album">
+				  <div class="imagesmain">
+					<img src="../img/로그인1.png">
+					<img src="../img/로그인1-1.png">
+					<img src="#">
+				  </div>
+				</div>
+				<button class="prev">이 전</button>
+				<button class="next">다 음</button>  
+			  </div>
+			  <!-- 이미지캐러셀 끝 -->
+			</div>
+   
+			<!-- <div id="SystemCommon" class="tabcontent">
+			   <h3>시스템공통</h3>
+			</div> -->
+		  </div>
+	  </div>
+   </section>
+
+
+   <!-- Tab content end -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
