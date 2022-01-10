@@ -121,7 +121,7 @@ function openTabs(el) {
 // 캐러셀
 let curPos = 0;
 let postion = 0;
-const IMAGE_WIDTH = 640;
+const IMAGE_HEIGTH = 42;
 const prevBtn = document.querySelector(".prev")
 const nextBtn = document.querySelector(".next")
 const images = document.querySelector(".imagesmain")
@@ -129,8 +129,8 @@ const images = document.querySelector(".imagesmain")
 function prev(){
   if(curPos > 0){
     nextBtn.removeAttribute("disabled")
-    postion += IMAGE_WIDTH;
-    images.style.transform = `translateX(${postion}px)`;
+    postion += IMAGE_HEIGTH;
+    images.style.transform = `translateY(${postion}rem)`;
     curPos = curPos - 1;
   }
   if(curPos == 0){
@@ -140,8 +140,8 @@ function prev(){
 function next(){
   if(curPos < 3){
     prevBtn.removeAttribute("disabled")
-    postion -= IMAGE_WIDTH;
-    images.style.transform = `translateX(${postion}px)`;
+    postion -= IMAGE_HEIGTH;
+    images.style.transform = `translateY(${postion}rem)`;
     curPos = curPos + 1;
   }
   if(curPos == 3){
