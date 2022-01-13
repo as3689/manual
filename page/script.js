@@ -132,6 +132,7 @@ function prev(){
     postion += IMAGE_HEIGTH;
     images.style.transform = `translateY(${postion}rem)`;
     curPos = curPos - 1;
+	console.log('ok')
   }
   if(curPos == 0){
     prevBtn.setAttribute('disabled', 'true')
@@ -143,6 +144,7 @@ function next(){
     postion -= IMAGE_HEIGTH;
     images.style.transform = `translateY(${postion}rem)`;
     curPos = curPos + 1;
+	console.log('ok')
   }
   if(curPos == 2){
     nextBtn.setAttribute('disabled', 'true')
@@ -156,4 +158,5 @@ function init(){
 }
  
 init();
+
 // 캐러셀끝
